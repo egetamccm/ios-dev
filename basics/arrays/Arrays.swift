@@ -1,10 +1,27 @@
 import Foundation
 
-//arrays play
-let workingDays: [String] = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+var workingDays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
 
-print(workingDays[2])
+print("Working Days")
 
-for day in workingDays{
-  print(day)
+for day in workingDays {
+    print(day)
+}
+
+print("\nTotal working days: \(workingDays.count)")
+
+workingDays.append("Saturday")
+
+print("\nAfter adding Saturday:")
+
+for day in workingDays {
+    print(day)
+}
+
+workingDays.remove(at: 5)
+
+print("\nAfter removing Saturday:")
+
+for day in workingDays {
+    print(day)
 }
